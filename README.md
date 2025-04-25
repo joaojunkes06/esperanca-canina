@@ -54,6 +54,3 @@ Para modificar este projeto:
 
 Este projeto é livre para uso educacional e não comercial.
 
-## Contato
-
-Este projeto foi desenvolvido por [Seu Nome]. Para mais informações ou sugestões, entre em contato [seu-email@example.com].
