@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esperança Canina - ONG de Adoção de Cães</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Esperança Canina</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Início</a></li>
+                    <li><a href="#caes">Cães</a></li>
+                    <li><a href="#processo">Processo</a></li>
+                    <li><a href="#doacoes">Doações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#" class="btn-primary">Adotar</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Adote um amigo, transforme uma vida</h1>
+                <p>Encontre o companheiro perfeito entre nossos cães resgatados prontos para dar e receber amor.</p>
+                <div class="hero-buttons">
+                    <a href="#caes" class="btn-primary">Ver Cães Disponíveis</a>
+                    <a href="#doacoes" class="btn-secondary">Fazer Doação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estatisticas" class="stats">
+        <div class="container">
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Cães Resgatados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">87</div>
+                    <div class="stat-label">Adoções Realizadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">R$15mil</div>
+                    <div class="stat-label">Doações Recebidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">32</div>
+                    <div class="stat-label">Voluntários Ativos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caes" class="dogs">
+        <div class="container">
+            <h2 class="section-title">Cães para Adoção</h2>
+            <p class="section-description">Conheça alguns dos nossos amigos que estão à procura de um lar amoroso.</p>
+            
+            <div class="filter-container">
+                <div class="filter">
+                    <label for="age">Idade:</label>
+                    <select id="age">
+                        <option value="todos">Todos</option>
+                        <option value="filhote">Filhote</option>
+                        <option value="adulto">Adulto</option>
+                        <option value="idoso">Idoso</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="gender">Gênero:</label>
+                    <select id="gender">
+                        <option value="todos">Todos</option>
+                        <option value="macho">Macho</option>
+                        <option value="femea">Fêmea</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="size">Porte:</label>
+                    <select id="size">
+                        <option value="todos">Todos</option>
+                        <option value="pequeno">Pequeno</option>
+                        <option value="medio">Médio</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="dog-cards" id="dogContainer">
+                <!-- Cards de cães serão adicionados via JavaScript -->
+            </div>
+            
+            <div class="centered">
+                <a href="#" class="btn-primary">Ver Mais Cães</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="processo" class="process">
+        <div class="container">
+            <h2 class="section-title">Como Funciona o Processo de Adoção</h2>
+            <p class="section-description">Adotar um cão é um compromisso sério. Conheça nosso processo para garantir que nossos amigos encontrem lares amorosos e responsáveis.</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h3>Escolha seu amigo</h3>
+                    <p>Navegue pelo nosso catálogo e encontre o cão que combina com seu perfil e estilo de vida.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Preencha o formulário</h3>
+                    <p>Complete nosso formulário de adoção com suas informações pessoais e detalhes sobre seu lar.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-home"></i></div>
+                    <h3>Visita domiciliar</h3>
+                    <p>Agendaremos uma visita para garantir que o ambiente seja adequado para receber o novo membro.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Adoção finalizada</h3>
+                    <p>Após aprovação, você assinará o contrato de adoção e levará seu novo amigo para casa.</p>
+                </div>
+            </div>
+            
+            <div class="centered">
+                <a href="#" class="btn-primary">Iniciar Processo de Adoção</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Histórias de Sucesso</h2>
+            <p class="section-description">Veja o que dizem as famílias que adotaram nossos cães.</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slides" id="testimonialContainer">
+                    <!-- Depoimentos serão adicionados via JavaScript -->
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doacoes" class="donations">
+        <div class="container">
+            <h2 class="section-title">Ajude nossa causa</h2>
+            <p class="section-description">Sua doação faz a diferença na vida dos cães resgatados, contribuindo para alimentação, tratamentos veterinários e cuidados diários.</p>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <div class="donation-icon"><i class="fas fa-paw"></i></div>
+                    <h3>Doação mensal</h3>
+                    <p>Torne-se um apoiador recorrente e ajude a garantir a continuidade do nosso trabalho.</p>
+                    <div class="donation-amount">
+                        <button class="amount-btn" data-value="20">R$20</button>
+                        <button class="amount-btn" data-value="50">R$50</button>
+                        <button class="amount-btn" data-value="100">R$100</button>
+                        <button class="amount-btn custom">Outro</button>
+                    </div>
+                    <a href="#" class="btn-primary">Doar Agora</a>
+                </div>
+                <div class="donation-card">
+                    <div class="donation-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Doação única</h3>
+                    <p>Ajude com qualquer valor, cada centavo é importante para manter nosso abrigo funcionando.</p>
+                    <div class="donation-amount">
+                        <button class="amount-btn" data-value="50">R$50</button>
+                        <button class="amount-btn" data-value="100">R$100</button>
+                        <button class="amount-btn" data-value="200">R$200</button>
+                        <button class="amount-btn custom">Outro</button>
+                    </div>
+                    <a href="#" class="btn-primary">Doar Agora</a>
+                </div>
+            </div>
+            
+            <div class="recent-donations">
+                <h3>Doações Recentes</h3>
+                <div class="donations-list" id="donationsContainer">
+                    <!-- Doações recentes serão adicionadas via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-description">Estamos aqui para responder suas dúvidas e receber sugestões.</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h3>Endereço</h3>
+                            <p>Av. Esperança, 123 - São Paulo, SP</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-text">
+                            <h3>Telefone</h3>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>contato@esperancacanina.org</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Esperança Canina</h2>
+                    <p>Transformando vidas, uma patinha de cada vez.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#caes">Cães para Adoção</a></li>
+                        <li><a href="#processo">Processo</a></li>
+                        <li><a href="#doacoes">Doações</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Receba Novidades</h3>
+                    <p>Cadastre seu email para receber informações sobre novos cães disponíveis e eventos.</p>
+                    <form>
+                        <input type="email" placeholder="Seu email">
+                        <button type="submit" class="btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Esperança Canina. Todos os direitos reservados.</p>
+                <p>Desenvolvido para fins acadêmicos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
